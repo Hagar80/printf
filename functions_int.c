@@ -9,8 +9,8 @@
  * @size: The size specifier
  * Return: The number of chars printed
  */
-int print_int(va_list types, char buffer, int flags)
-int print_int(int width, int precision, int size)
+int print_int(va_list types, char buffer[],
+		int flags, int width, int precision, int size)
 {
 int l = BUFF_SIZE - 2;
 int is_negative = 0;
